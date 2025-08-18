@@ -678,13 +678,21 @@ What's wrong with the following code? Can you fix it?
 ```{r fix-code, eval=FALSE, error=TRUE}
 # Problem code:
 filter(babynames, name = "Sea")
+<<<<<<< HEAD
 # filter(babynames, name == Sea)
+=======
+filter(babynames, name == Sea)
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 ```
 
 **Your corrected code:**
 ```{r fix-code-student, eval=FALSE}
 # Fixed code here:
+<<<<<<< HEAD
 filter(babynames, name == "Sea")
+=======
+
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 ```
 
@@ -698,6 +706,7 @@ Which name was the most popular for a single gender in a single year? Compare ar
 
 ```{r popular-names-student, eval=FALSE}
 # Your code to find highest proportion:
+<<<<<<< HEAD
 babynames |> 
   arrange(desc(prop)) |> 
   head()
@@ -706,12 +715,22 @@ babynames |>
 babynames |> 
   arrange(desc(n)) |> 
   head()
+=======
+
+
+# Your code to find highest count:
+
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 ```
 
 **Your analysis:**
 - Are the results the same? Why or why not?
+<<<<<<< HEAD
   Becuase Population inconsistent. 
+=======
+
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 
 ## Problem 3: Popular Girls Names in 2017  
@@ -724,10 +743,14 @@ Write a pipeline that will:
 
 ```{r girls-2017-student, eval=FALSE}
 # Your pipeline here:
+<<<<<<< HEAD
 babynames |> 
   filter(sex =="F", year == 2017) |> 
   select(name, n) |> 
   arrange(desc(n))
+=======
+
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 ```
 
@@ -786,6 +809,7 @@ table4b_long <- table4b |>
     values_to = "population"
   )
 table4b_long
+<<<<<<< HEAD
 
 table1_wide <- table1 |> 
   mutate(
@@ -794,6 +818,8 @@ table1_wide <- table1 |>
   group_by(country)
 
 table1_wide
+=======
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 ```
 
 
@@ -819,6 +845,7 @@ cholesterol_data
 ```{r cholesterol-solution-student, eval=FALSE}
 # Task 1 - Convert to long format:
 
+<<<<<<< HEAD
 cholesterol_data_long <- 
   cholesterol_data |>
   pivot_longer(
@@ -829,6 +856,11 @@ cholesterol_data_long <-
 
 # Task 2 - Calculate summary statistics:
 glimpse(cholesterol_data_long)
+=======
+
+# Task 2 - Calculate summary statistics:
+
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 ```
 
@@ -868,7 +900,11 @@ d. Store back in appropriate place
 
 
 
+<<<<<<< HEAD
 # Final Reflection - 
+=======
+# Final Reflection  
+>>>>>>> 37d0190923c98377cffb7bae5a8e73ca5f8a34fd
 
 **What did you learn?**
 - Which concepts were most challenging?
